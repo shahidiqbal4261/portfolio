@@ -1,14 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shahid Iqbal - Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Shahid Iqbal</h1>
-    <p>Web Developer | Software Engineer</p>
-    <a href="Shahid_Iqbal_Europass_CV.pdf" download>Download CV</a>
-  </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">💻 Shahid</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <button id="modeToggle" class="btn btn-sm btn-light ms-3">🌙 Dark Mode</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="bg-overlay text-white text-center pt-5">
+  <h1 class="display-4">👋 Hi, I'm Shahid Iqbal</h1>
+  <p class="lead">Web Developer | Software Engineer</p>
+  <a class="btn btn-primary mt-3" href="Shahid_Iqbal_Europass_CV.pdf" download>📄 Download CV</a>
+</div>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">🚀 Projects</h2>
+  <div class="card mb-3 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Sports Management System</h5>
+      <p class="card-text">Manage sports events, players, and scores using PHP and MySQL.</p>
+    </div>
+  </div>
+  <div class="card mb-3 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Gym Management System</h5>
+      <p class="card-text">A system for gym membership, trainers, and payment tracking.</p>
+    </div>
+  </div>
+  <div class="card mb-3 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Campus Revenue System</h5>
+      <p class="card-text">Visual dashboards to manage fees and expenses using charts.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="text-center text-white py-4 bg-dark mt-5">
+  <p>Connect with me:</p>
+  <a href="https://www.linkedin.com/in/shahid-iqbal-916665259" class="text-white me-3">LinkedIn</a>
+  <a href="https://wa.me/923055668426" class="text-white">WhatsApp</a>
+  <p class="mt-2">Made with ❤️ by Shahid Iqbal</p>
+</footer>
+
+<script>
+  const toggle = document.getElementById('modeToggle');
+  const body = document.body;
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    toggle.innerText = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+  });
+</script>
 </body>
 </html>

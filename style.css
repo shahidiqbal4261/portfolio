@@ -1,13 +1,56 @@
 body {
-  font-family: Arial;
-  background: #f5f5f5;
-  color: #333;
-  padding: 20px;
-  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
 }
-header {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 100px 20px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.profile-img {
+  flex: 1 1 40%;
+  background: url('https://i.postimg.cc/DfdtywP7/Whats-App-Image-2025-06-24-at-23-50-42-07d2ea92.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.about-text {
+  flex: 1 1 60%;
+  padding: 40px;
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+}
+.dark-mode .navbar {
+  background-color: #222 !important;
+}
+.dark-mode .card,
+.dark-mode .about-text,
+.dark-mode .form-control {
+  background-color: #1e1e1e !important;
+  color: #fff;
 }
