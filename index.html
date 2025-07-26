@@ -1,75 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shahid Iqbal - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahid Iqbal | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">💻 Shahid</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item">
-          <button id="modeToggle" class="btn btn-sm btn-light ms-3">🌙 Dark Mode</button>
-        </li>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Shahid Iqbal</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="bg-overlay text-white text-center pt-5">
-  <h1 class="display-4">👋 Hi, I'm Shahid Iqbal</h1>
-  <p class="lead">Web Developer | Software Engineer</p>
-  <a class="btn btn-primary mt-3" href="Shahid_Iqbal_Europass_CV.pdf" download>📄 Download CV</a>
-</div>
-
-<div class="container mt-5">
-  <h2 class="text-center mb-4">🚀 Projects</h2>
-  <div class="card mb-3 shadow-sm">
-    <div class="card-body">
-      <h5 class="card-title">Sports Management System</h5>
-      <p class="card-text">Manage sports events, players, and scores using PHP and MySQL.</p>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hello, I'm</h2>
+      <h1>Shahid Iqbal</h1>
+      <p>Full Stack Web Developer | Laravel & React Specialist</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
-  </div>
-  <div class="card mb-3 shadow-sm">
-    <div class="card-body">
-      <h5 class="card-title">Gym Management System</h5>
-      <p class="card-text">A system for gym membership, trainers, and payment tracking.</p>
-    </div>
-  </div>
-  <div class="card mb-3 shadow-sm">
-    <div class="card-body">
-      <h5 class="card-title">Campus Revenue System</h5>
-      <p class="card-text">Visual dashboards to manage fees and expenses using charts.</p>
-    </div>
-  </div>
-</div>
+  </section>
 
-<footer class="text-center text-white py-4 bg-dark mt-5">
-  <p>Connect with me:</p>
-  <a href="https://www.linkedin.com/in/shahid-iqbal-916665259" class="text-white me-3">LinkedIn</a>
-  <a href="https://wa.me/923055668426" class="text-white">WhatsApp</a>
-  <p class="mt-2">Made with ❤️ by Shahid Iqbal</p>
-</footer>
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate software engineer specializing in full-stack web development. With a strong background in Laravel and modern JavaScript frameworks, I build clean, responsive, and user-friendly websites.
+      </p>
+    </div>
+  </section>
 
-<script>
-  const toggle = document.getElementById('modeToggle');
-  const body = document.body;
-  toggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    toggle.innerText = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
-  });
-</script>
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>Bootstrap</div>
+        <div>React</div>
+        <div>Laravel</div>
+        <div>PHP</div>
+        <div>MySQL</div>
+        <div>Git</div>
+        <div>Firebase</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <h3>Campus Revenue Management System</h3>
+          <p>A Laravel-based system for managing student revenue efficiently.</p>
+        </div>
+        <div class="card">
+          <h3>Clothing E-commerce Website</h3>
+          <p>Built using React and Laravel APIs to sell clothing items online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/shahid-iqbal-916665259">LinkedIn</a>
+        <a href="https://github.com/shahidiqbal4261">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shahid Iqbal. All rights reserved.</p>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
