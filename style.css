@@ -136,7 +136,7 @@ h1, h2, h3 {
 .card {
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
@@ -144,6 +144,35 @@ h1, h2, h3 {
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+/* Project card image */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* === Lightbox Gallery for projects.html === */
+.project-detail .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.project-detail .gallery a {
+  flex: 1 1 calc(30% - 10px);
+}
+
+.project-detail .gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /* === Contact Section === */
